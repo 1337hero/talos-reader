@@ -11,6 +11,16 @@ keywords = ["cli", "code-analysis", "signatures", "llm", "tree-sitter"]
 categories = ["command-line-utilities", "development-tools"]
 authors = ["1337Hero <mike@1337hero.com>"]
 
+# Only include the essentials when publishing to crates.io
+include = [
+    "Cargo.toml",
+    "README.md",
+    "LICENSE",
+    "logo.png",
+    "src/**",
+    "queries/**",
+]
+
 [dependencies]
 clap = { version = "4", features = ["derive"] }
 ignore = "0.4"
